@@ -4,7 +4,7 @@ if [ -z ${1+x} ] || [ -z ${2+x} ] || [ -z ${3+x} ]; then echo -e "Missing Argume
 
 
 SENSOR_ADDRESS=127.0.0.1
-PULL_PCAP_SH_LOCATION=/home/nick/drake/pull_pcap.sh
+PULL_PCAP_SH_LOCATION=/remote/path/to/pull_pcap.sh
 AUTO_SHARK=true
 WIRESHARK_BIN=/usr/bin/wireshark
 

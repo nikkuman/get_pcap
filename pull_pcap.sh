@@ -9,7 +9,7 @@ if [ -z ${1+x} ] || [ -z ${2+x} ] || [ -z ${3+x} ]; then echo -e "Missing Argume
 # Datetime format is "YYYY-MM-DD HH:MM:SS".  Everything after YYYY-MM-DD is optional.  Enter time as granularly as you like.
 # Note the + and - 1 day: Change this to the duration of your fpc pcap files. For example, if one file covers an hour on average, change to +/-1 hour.
 PCAPDURATION="1 day"
-PCAP_FOLDER=/home/nick/drake/pcaps/
+PCAP_FOLDER=/path/to/openfpc/pcap/dir/
 
 STARTDATETIME=$(date -d "${1} -${PCAPDURATION}")
 ENDDATETIME=$(date -d "${2} +${PCAPDURATION}")
